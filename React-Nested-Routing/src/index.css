@@ -1,0 +1,72 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styling */
+.header h2 {
+  font-size: 24px;
+  cursor: pointer;
+  color: #f7ac5b; /* Accent color */
+  transition: color 0.3s ease;
+}
+
+.header h2:hover {
+  color: #fff;
+}
+
+/* Nav links container */
+.header ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* Links styling */
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+  color: #f7ac5b;
+  transform: scale(1.05);
+}
+
+/* Active link styling */
+.link.active {
+  color: #f7ac5b;
+  font-weight: 600;
+  border-bottom: 2px solid #f7ac5b;
+  padding-bottom: 2px;
+}
+
+/* Optional: make navbar responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
