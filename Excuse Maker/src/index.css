@@ -1,0 +1,23 @@
+.App{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.App button{
+  padding: 12px 24px;
+  font-size: 22px;
+  border: none;
+  background: orangered;
+  color: #fff;
+}
+
+.App p{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+
+}
